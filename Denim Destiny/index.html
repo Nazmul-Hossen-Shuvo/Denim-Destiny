@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Denim Destiny offers premium-quality jeans for everyday comfort and modern style. Discover timeless fits and effortless denim essentials."
+    />
+    <title>Denim Destiny | Premium Jeans</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="index.html" class="brand" aria-label="Denim Destiny home">
+          <img class="brand-mark" src="denim-destiny-logo.jpg" alt="Denim Destiny" width="212" height="52" />
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#products">Shop</a>
+          <a href="#categories">Category</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <label class="search-box" aria-label="Search products">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.96 12.72l4.22 4.22 1.41-1.41-4.22-4.22A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+            <input id="siteSearch" type="search" placeholder="Search jeans" aria-label="Search jeans" />
+          </label>
+          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">☀️</button>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <a href="#products">Shop</a>
+        <a href="#categories">Category</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <span class="eyebrow">Built for everyday movement</span>
+            <h1>Premium denim that feels as good as it looks.</h1>
+            <p>
+              Discover jeans sculpted for comfort, fit, and timeless style—crafted to keep up with your day.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#products">Shop now</a>
+              <a class="button secondary" href="#story">Explore fits</a>
+            </div>
+            <ul class="stats" aria-label="Highlights">
+              <li><strong>2k+</strong><span>happy customers</span></li>
+              <li><strong>4.9/5</strong><span>average rating</span></li>
+              <li><strong>48h</strong><span>dispatch</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured denim product">
+            <div class="visual-card main-card">
+              <div class="product-shot">
+                <img src="images (6).jpg" alt="A model wearing light-wash jeans" width="447" height="447" fetchpriority="high" decoding="async" />
+              </div>
+              <div class="product-label">
+                <span>New arrival</span>
+                <strong>Legacy Fit</strong>
+              </div>
+            </div>
+            <div class="floating-badge badge-top">Premium stretch</div>
+            <div class="floating-badge badge-bottom">Free shipping over $80</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-strip">
+        <div class="container strip-grid">
+          <div>Premium fabric</div>
+          <div>Tailored fit</div>
+          <div>Ethically made</div>
+          <div>Easy returns</div>
+        </div>
+      </section>
+
+      <section id="categories" class="categories">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Find your fit</span>
+              <h2>Shop by category.</h2>
+            </div>
+          </div>
+
+          <div class="category-grid">
+            <a class="category-card" href="#products">
+              <img src="images (3).jpg" alt="Model wearing slim-fit blue jeans" loading="lazy" decoding="async" />
+              <span>Slim Fit</span>
+            </a>
+            <a class="category-card" href="#products">
+              <img src="images (10).jpg" alt="Model wearing regular-fit light-wash jeans" loading="lazy" decoding="async" />
+              <span>Regular Fit</span>
+            </a>
+            <a class="category-card" href="#products">
+              <img src="images (5).jpg" alt="Classic straight-fit blue jeans" loading="lazy" decoding="async" />
+              <span>Straight Fit</span>
+            </a>
+            <a class="category-card" href="#products">
+              <img src="images (8).jpg" alt="Relaxed-fit charcoal jeans" loading="lazy" decoding="async" />
+              <span>Relaxed Fit</span>
+            </a>
+            <a class="category-card" href="#products">
+              <img src="images (9).jpg" alt="Model wearing wide-leg baggy blue jeans" loading="lazy" decoding="async" />
+              <span>Baggy Fit</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Our collection</span>
+              <h2>Find your perfect denim fit.</h2>
+            </div>
+          </div>
+
+          <div class="product-grid" id="productGrid">
+            <article class="product-card" data-name="Classic Straight Fit" data-category="classic straight">
+              <div class="product-image">
+                <img src="images (4).jpg" alt="Dark indigo straight-leg jeans" loading="lazy" decoding="async" />
+                <span class="tag">Best seller</span>
+              </div>
+              <div class="product-info">
+                <h3>Classic Straight Fit</h3>
+                <p>Balanced shape with everyday comfort and a clean silhouette.</p>
+                <div class="product-meta">
+                  <strong>$69</strong>
+                  <button type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Skinny Modern" data-category="skinny slim">
+              <div class="product-image">
+                <img src="images.jpg" alt="A model wearing modern blue jeans" loading="lazy" decoding="async" />
+                <span class="tag tag-dark">Limited</span>
+              </div>
+              <div class="product-info">
+                <h3>Skinny Modern</h3>
+                <p>Slim profile with stretch for a sharp look from day to night.</p>
+                <div class="product-meta">
+                  <strong>$74</strong>
+                  <button type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Relaxed Cargo" data-category="relaxed cargo">
+              <div class="product-image">
+                <img src="images (1).jpg" alt="A model wearing relaxed light-wash jeans" loading="lazy" decoding="async" />
+                <span class="tag">New</span>
+              </div>
+              <div class="product-info">
+                <h3>Relaxed Cargo</h3>
+                <p>Roomy comfort with utility-inspired details and a laid-back feel.</p>
+                <div class="product-meta">
+                  <strong>$79</strong>
+                  <button type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="Slim Tailored" data-category="slim tailored">
+              <div class="product-image">
+                <img src="images (2).jpg" alt="Light-wash slim jeans laid flat" loading="lazy" decoding="async" />
+                <span class="tag">Editor’s pick</span>
+              </div>
+              <div class="product-info">
+                <h3>Slim Tailored</h3>
+                <p>Modern taper with refined lines for a polished city-ready finish.</p>
+                <div class="product-meta">
+                  <strong>$76</strong>
+                  <button type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="story">
+        <div class="container story-grid">
+          <div class="story-copy">
+            <span class="eyebrow">Why Denim Destiny</span>
+            <h2>Crafted to fit your rhythm.</h2>
+            <p>
+              Every pair is designed with soft-stretch denim, reinforced stitching, and thoughtful details that make daily wear comfortable and elevated.
+            </p>
+            <ul class="check-list">
+              <li>Premium cotton blend fabrics</li>
+              <li>Detailed fit testing for comfort</li>
+              <li>Conscious manufacturing standards</li>
+            </ul>
+          </div>
+
+          <div class="story-gallery" aria-label="More views of our denim">
+            <figure>
+              <img
+                src="WhatsApp Image 2026-11-02 at 6.45.03 AM.jpeg"
+                alt="Blue straight-leg jeans photographed from the front"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Classic wash</figcaption>
+            </figure>
+            <figure class="upright-detail-photo">
+              <img
+                src="WhatsApp Image 2026-11-02 at 6.45.08 AM.jpeg"
+                alt="Blue jeans shown from the front"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Front detail</figcaption>
+            </figure>
+            <figure class="upright-detail-photo">
+              <img
+                src="WhatsApp Image 2026-11-02 at 6.45.09 AM.jpeg"
+                alt="Blue jeans shown from the back"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Back detail</figcaption>
+            </figure>
+            <figure class="deep-indigo-photo">
+              <img
+                src="WhatsApp Image 2026-11-02 at 6.45.23 AM.jpeg"
+                alt="Dark indigo jeans photographed flat"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Deep indigo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <div class="section-head center">
+            <span class="eyebrow">Customer love</span>
+            <h2>What shoppers are saying.</h2>
+          </div>
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“The fit is exactly what I wanted—structured but so easy to wear all day.”</p>
+              <strong>— Maya T.</strong>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“High-quality fabric and the color stays rich wash after wash.”</p>
+              <strong>— Daniel R.</strong>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“The relaxed cargo pair is my new go-to for weekends and travel.”</p>
+              <strong>— Leila S.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq">
+        <div class="container faq-wrap">
+          <div class="faq-copy">
+            <span class="eyebrow">Need help?</span>
+            <h2>Frequently asked questions.</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>What sizes do you offer?</summary>
+              <p>We carry size 28–38 in select fits, with detailed measurement guides on each product page.</p>
+            </details>
+            <details>
+              <summary>Do you offer free shipping?</summary>
+              <p>Yes, free shipping is available on orders above $80 within the shipping region.</p>
+            </details>
+            <details>
+              <summary>How quickly do orders ship?</summary>
+              <p>Most orders are processed and dispatched within 48 hours.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand" aria-label="Denim Destiny home">
+            <img class="brand-mark" src="denim-destiny-logo.jpg" alt="Denim Destiny" />
+          </a>
+          <p>Premium jeans made for everyday confidence.</p>
+        </div>
+        <div>
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#products">Classic straight</a></li>
+            <li><a href="#products">Slim fit</a></li>
+            <li><a href="#products">Relaxed cargo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+            <li><a href="terms-conditions.html">Terms & conditions</a></li>
+            <li><a href="refund-policy.html">Refund policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Denim Destiny</span>
+        <span>All rights reserved.</span>
+      </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+      <div class="container cookie-content">
+        <p>We use cookies to enhance your browsing experience and improve site performance.</p>
+        <div class="cookie-actions">
+          <button type="button" class="button secondary small">Learn more</button>
+          <button type="button" class="button primary small" id="acceptCookies">Accept</button>
+        </div>
+      </div>
+    </div>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/8801805742178?text=Hi%20Denim%20Destiny%2C%20I%27d%20like%20to%20shop%20for%20jeans."
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M20.52 3.48A11.78 11.78 0 0 0 12.05 0C5.48 0 .14 5.34.14 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.38-1.67a11.92 11.92 0 0 0 5.67 1.7h.01c6.57 0 11.91-5.34 11.91-11.9a11.8 11.8 0 0 0-3.45-8.65ZM12.05 21.8c-1.82 0-3.6-.49-5.15-1.42l-.37-.22-3.78.99 1-3.67-.24-.38A9.86 9.86 0 0 1 2.2 11.9a9.86 9.86 0 1 1 17.5 6.96 9.84 9.84 0 0 1-7.65 3.94Zm5.42-7.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.76.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.45.13-.59.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.06 2.89 1.21 3.09c.14.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35Z"/>
+      </svg>
+    </a>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
